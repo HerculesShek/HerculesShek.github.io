@@ -1,1 +1,3 @@
-baseurl: http://herculesshek.github.io/
+baseurl: http://herculesshek.github.io
+
+permalink: /:title
