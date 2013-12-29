@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: Hercules Shek
+=======
+baseusrl: http://herculesshek.github.com
+>>>>>>> 06b04918f1e7295dd03c72ba620a8029f314e665
