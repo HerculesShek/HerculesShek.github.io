@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
 <head>
 　　<meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
     <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
-<meta property="wb:webmaster" content="46c6279c22727ee7" />
+	<meta property="wb:webmaster" content="46c6279c22727ee7" />
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <div class="home-menu">
@@ -29,7 +30,7 @@
     </div>
 
 　　{{ content }}
-
+<wb:follow-button uid="3960733160" type="red_1" width="67" height="24" ></wb:follow-button>
 	<script type="text/javascript">
         $(function(){
             $('.home-follow').click(function(e){
