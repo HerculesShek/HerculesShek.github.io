@@ -6,7 +6,6 @@ description: 动态规划之最长公共子序列的Python代码的实现
 ---
 
 最长公共子序列问题Python代码：
-<?prettify lang=python?>
 
 	# -*- coding: utf-8 -*-
 	import time
