@@ -200,9 +200,9 @@ $(document).ready(function(){
         }
     })();
 
-    //$.getScript('/js/prettify/prettify.js',function(){
-        //prettyPrint();
-    //});
+    $.getScript('/js/prettify/prettify.js',function(){
+        prettyPrint();
+    });
 
     if(/\#comment/.test(location.hash)){
         $('#disqus_container .comment').trigger('click');
