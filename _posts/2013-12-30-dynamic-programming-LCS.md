@@ -55,7 +55,14 @@ description: 动态规划之最长公共子序列的Python代码的实现
 
 结果是：
 
-	if __name__ == '__main__':
-	    begin = time.time()
-	    test()
-	    print 'total runtime is', time.time()-begin
+	>>>
+	length of LSC of x and y is 4
+	b
+	c
+	b
+	a
+	total runtime is 0.0339999198914
+		if __name__ == '__main__':
+		    begin = time.time()
+		    test()
+		    print 'total runtime is', time.time()-begin
