@@ -4,7 +4,7 @@
  * Alex Ford of CodeTunnel:
  * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
  */
-
+pre.prettyprint { padding: 2px; border: 1px solid #888; font-family: Inconsolata; font-size: 13px;}
 .str
 {
     color: #EC7600;
