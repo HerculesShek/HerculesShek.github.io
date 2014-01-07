@@ -21,7 +21,8 @@ description: lispbox现在已经不更新了，都是使用的老版本的emacs�
 
 - 过程还是比较简单的，解压下载的ccl，将目录下的scripts中的ccl（32位）或者是ccl64（64位）复制到/usr/local/bin或者是其他path能找到的路径中。
 - 在自己的~中的.bashrc或者.bash_profile中添加变量 CCL\_DEFAULT\_DIRECTORY 为解压的ccl的目录的位置，比如/usr/local/src/ccl，如果不配置这个变量的话，则把解压的目录放到/usr/local/src/ccl中即可，因为如果不配置CCL\_DEFAULT\_DIRECTORY的话，ccl默认的就是找的此目录。
-- 之后在terminal中运行ccl或者ccl64就行了：
+
+之后在terminal中运行ccl或者ccl64就行了：
 
 	$ ccl
 	Welcome to Clozure Common Lisp Version 1.9-r15756  (LinuxX8632)!
