@@ -2,7 +2,7 @@
 layout: post
 title: 线性时间的选择算法
 category: blog
-description: lispbox现在已经不更新了，都是使用的老版本的emacs、slime和quicklisp
+description: 找到数组a[p...r]中第i个小/大的元素的值
 ---
 
 期望运行时间为Θ(n)的选择问题的算法，最坏则为Θ(n^2)
