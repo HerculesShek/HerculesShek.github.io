@@ -76,6 +76,6 @@ description: lispbox现在已经不更新了，都是使用的老版本的emacs�
 	yum install glibc.i686
 
 
-[0]: http://common-lisp.net/project/lispbox/ "Lispbox"
-[1]: http://ccl.clozure.com/download.html "clozure CL"
-[2]: yum install glibc.i686 "quicklisp"
+[0]: http://common-lisp.net/project/lispbox/  "Lispbox"
+[1]: http://ccl.clozure.com/download.html  "clozure CL"
+[2]: http://www.quicklisp.org/ "quicklisp"
