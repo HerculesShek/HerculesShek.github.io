@@ -1,21 +1,24 @@
 ---
 layout: post
-title: CentOS6.5°²×°sunpinyinÊäÈë·¨
+title: CentOS6.5å®‰è£…sunpinyinè¾“å…¥æ³•
 category: blog
-description: CentOS6.5×Ô´øµÄÊäÈë·¨´Ê¿â½ÏÉÙ£¬ÊÔÒ»ÏÂsunpinyin
+description: CentOS6.5 è‡ªå¸¦çš„è¾“å…¥æ³•è¯åº“è¾ƒå°‘,æŠ˜è…¾ç€æ¢ä¹‹
 ---
 
-¸Ğ¾õcentos6.4×Ô´øµÄÄÇ¸öÊäÈë·¨²»Ì«Êæ·ş£¬Ï²»¶ÕÛÌÚ£¬¾Í°²×°ÁËsunpinyinÊÔÊÔ
-°²×°¹ı³Ì²Î¿¼ https://code.google.com/p/sunpinyin/wiki/BuildUnix
-ÒÀÀµ×é¼ş£º
+æ„Ÿè§‰centos6.4è‡ªå¸¦çš„é‚£ä¸ªè¾“å…¥æ³•ä¸å¤ªèˆ’æœï¼Œå–œæ¬¢æŠ˜è…¾ï¼Œå°±å®‰è£…äº†sunpinyinè¯•è¯•
+å®‰è£…è¿‡ç¨‹å‚è€ƒ https://code.google.com/p/sunpinyin/wiki/BuildUnix
+ä¾èµ–ç»„ä»¶ï¼š
+
 	yum install make gcc*  ibus-devel  sqlite-devel scons
-°²×°£º
-´Óhttp://code.google.com/p/sunpinyin/ÏÂÔØsunpinyin-2.0.3.tar.gz ºÍ ibus-sunpinyin-2.0.3.tar.gz
-½âÑ¹
+	
+å®‰è£…ï¼š
+ä»http://code.google.com/p/sunpinyin/ä¸‹è½½sunpinyin-2.0.3.tar.gz å’Œ ibus-sunpinyin-2.0.3.tar.gz
+è§£å‹
 	tar -zxvf sunpinyin-2.0.3.tar.gz
 	cd sunpinyin-2.0.3
-ÓÉÓÚ´Ê¿âĞŞ¸Ä£¬ĞŞ¸ÄrawÖĞµÄMakefileÎÄ¼ş£¬ÎÄ¼şÃûÔÚhttps://code.google.com/p/open-gram/downloads/list
-ĞŞ¸ÄÎª£º
+ç”±äºè¯åº“ä¿®æ”¹ï¼Œä¿®æ”¹rawä¸­çš„Makefileæ–‡ä»¶ï¼Œæ–‡ä»¶ååœ¨https://code.google.com/p/open-gram/downloads/list
+ä¿®æ”¹ä¸ºï¼š
+
 	LM_URL=http://open-gram.googlecode.com/files
 	WGET=wget
 	TAR=tar
@@ -36,19 +39,21 @@ description: CentOS6.5×Ô´øµÄÊäÈë·¨´Ê¿â½ÏÉÙ£¬ÊÔÒ»ÏÂsunpinyin
 	clean:
 	    @rm -f stamp-dict stamp-lm lm_sc.t3g.arpa dict.utf8
 	    @echo cleaned
-Ö®ºó±àÒë°²×°£º
+		
+ä¹‹åç¼–è¯‘å®‰è£…ï¼š
+
 	scons --prefix=/usr
 	scons install
-ÔÙ°²×°ibus-sunpinyin
+å†å®‰è£…ibus-sunpinyin
 	tar -zxvf ibus-sunpinyin-2.0.3.tar.gz & cd
-±àÒë°²×°
+ç¼–è¯‘å®‰è£…
 	scons --prefix
 	scons install
-ÕâÀï¿ÉÄÜ»á³öÎÊÌâ Checking for sunpinyin-2.0...no
-½â¾ö·½Ê½ÊÇ ½«Ô´ÂëÄ¿Â¼ÖĞµÄsunpinyin-2.0.3.pc¸´ÖÆµ½/etc/share/pkgconfig»òÕßÊÇ°Ñ/usr/lib/pkgconfigÏÂµÄsunpinyin-2.0.pc¸´ÖÆµ½/etc/share/pkgconfigÖĞ 
-´ËÊ±ÖØÆôibusÌí¼Ósunpinyin£¬Æô¶¯¿¨ËÀ
-½â¾ö£º
+è¿™é‡Œå¯èƒ½ä¼šå‡ºé—®é¢˜ Checking for sunpinyin-2.0...no
+è§£å†³æ–¹å¼æ˜¯ å°†æºç ç›®å½•ä¸­çš„sunpinyin-2.0.3.pcå¤åˆ¶åˆ°/etc/share/pkgconfigæˆ–è€…æ˜¯æŠŠ/usr/lib/pkgconfigä¸‹çš„sunpinyin-2.0.pcå¤åˆ¶åˆ°/etc/share/pkgconfigä¸­ 
+æ­¤æ—¶é‡å¯ibusæ·»åŠ sunpinyinï¼Œå¯åŠ¨å¡æ­»
+è§£å†³ï¼š
 	cd /etc/ld.so.conf.d/
 	mkdir -p sunpinyin/usr/lib
 	ldconfig
-ÖØÆôibus¼´¿É
+é‡å¯ibuså³å¯
