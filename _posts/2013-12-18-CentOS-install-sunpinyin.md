@@ -44,16 +44,23 @@ description: CentOS6.5 自带的输入法词库较少,折腾着换之
 
 	scons --prefix=/usr
 	scons install
+	
 再安装ibus-sunpinyin
+
 	tar -zxvf ibus-sunpinyin-2.0.3.tar.gz & cd
+	
 编译安装
+
 	scons --prefix
 	scons install
+	
 这里可能会出问题 Checking for sunpinyin-2.0...no
 解决方式是 将源码目录中的sunpinyin-2.0.3.pc复制到/etc/share/pkgconfig或者是把/usr/lib/pkgconfig下的sunpinyin-2.0.pc复制到/etc/share/pkgconfig中 
 此时重启ibus添加sunpinyin，启动卡死
 解决：
+
 	cd /etc/ld.so.conf.d/
 	mkdir -p sunpinyin/usr/lib
 	ldconfig
+	
 重启ibus即可
