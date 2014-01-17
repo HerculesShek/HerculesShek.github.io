@@ -2,7 +2,7 @@
 layout: post
 title: CentOS6.5安装sunpinyin输入法
 category: blog
-description: CentOS6.5 自带的输入法词库较少,折腾着换之
+description: CentOS6.5 自带的输入法词库较少,试试sunpinyin如何
 ---
 
 感觉centos6.4自带的那个输入法不太舒服，喜欢折腾，就安装了sunpinyin试试
