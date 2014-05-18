@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 使用最新的emacs+slime+CCL建立Common Lisp IDE
+title: 使用最新版emacs+slime+CCL建立Common Lisp IDE
 category: blog
-description: lispbox现在已经不更新了，都是使用的老版本的emacs、slime和quicklisp
+description: lispbox现在已经不更新了，使用的是老版本的emacs、slime和quicklisp
 ---
 
 ## 介绍
 
-[Lispbox][0]安装简易，是新手学习Lisp无痛起步的不二之选。但现在没人维护了，其中使用的emacs，slime，ccl和quicklisp等都是比较老的版本了。所以我打算记录一下如何使用最新的上述工具搭建Common Lisp的IDE。
+[Lispbox][0]安装简易，是新手学习Lisp无痛起步的不二之选。但现在没人维护了，其中使用的emacs，slime，ccl和quicklisp等都是比较老的版本。本文介绍如何使用最新的上述工具搭建Common Lisp的IDE。
 
 ### 准备
 
-- CentOS 6.5 64bit
+- CentOS 6.5 64bit / defora 20 64bit
 - Emacs 24.3.1 64bit
 - 下载[Clozure CL][1]这个是Common Lisp的一个优秀实现，CentOS系统选择 Linux的x86即可，其中包含了32和64的版本
 
