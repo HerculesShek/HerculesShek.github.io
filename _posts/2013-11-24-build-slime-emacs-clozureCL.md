@@ -11,7 +11,7 @@ description: lispbox现在已经不更新了，使用的是老版本的emacs、s
 
 ### 准备
 
-- CentOS 6.5 64bit / defora 20 64bit
+- CentOS 6.5 64bit / fedora 20 64bit
 - Emacs 24.3.1 64bit
 - 下载[Clozure CL][1]这个是Common Lisp的一个优秀实现，CentOS系统选择 Linux的x86即可，其中包含了32和64的版本
 
