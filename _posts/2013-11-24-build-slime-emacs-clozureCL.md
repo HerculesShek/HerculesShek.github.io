@@ -19,11 +19,12 @@ description: lispbox现在已经不更新了，使用的是老版本的emacs、s
 
 ### 安装ccl
 
-- 解压下载的ccl，将其中scripts目录下的ccl（32位）或者是ccl64（64位）复制到/usr/local/bin或者是其他path能找到的路径中并且重命名为ccl。
+- 解压下载的ccl，将其中scripts目录下的ccl（32位）或者是ccl64（64位）复制到/usr/local/bin或者是其他的PATH变量包含的路径中并且重命名为ccl——不重命名也可，只要与最终编辑.emacs环节中的"(setq inferior-lisp-program "/usr/local/bin/ccl64 -K utf-8")"对应即可。
 - 在自己的~中的.bashrc或者.bash_profile中添加变量 CCL\_DEFAULT\_DIRECTORY 为解压的ccl的目录的位置，比如/usr/local/src/ccl，如果不配置这个变量的话，则把解压的目录放到/usr/local/src/ccl中即可，因为不配置CCL\_DEFAULT\_DIRECTORY，ccl默认的就是找的此目录。至于变量CCL\_DEFAULT\_DIRECTORY的默认值，打开ccl64那个脚本看一眼就知道了！源码说明一切！此说明来自于[ccl的文档][3]
 - 安装的时候参考上面的文档就OK，暂时作者没有编译lisp-kernel
 
 之后在terminal中运行ccl或者ccl64如下输出则OK：
+
 ```
 $ ccl
 Welcome to Clozure Common Lisp Version 1.10-r16196  (LinuxX8664)!
@@ -42,9 +43,11 @@ Version 1.10-r16196  (LinuxX8664)
 Quicklisp是Common Lisp的库管理工具，基于系统目前安装的Common Lisp实现用几个命令就可以下载、安装或者加载其余1000多个库
 
 在[quicklisp][2]下载最新的quicklisp.lisp，只有55k
+
 ```
 $ curl -O http://beta.quicklisp.org/quicklisp.lisp
 ```
+
 之后打开终端：
 
 	$ ccl --load quicklisp.lisp
@@ -69,6 +72,7 @@ $ curl -O http://beta.quicklisp.org/quicklisp.lisp
 ### 为Emacs添加slime
 
 打开~/.emacs 添加：
+
 ```
 (set-language-environment "utf-8")
 (add-to-list 'load-path "~/src/slime/")  ;or wherever you put it
