@@ -2,6 +2,7 @@
 layout: post
 title: 源码方式安装最新版git
 category: blog
+tags: CentOS
 description: 在64位CentOS6.5上使用源码方式安装最新的git
 ---
 
