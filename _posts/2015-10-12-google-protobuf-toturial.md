@@ -6,7 +6,9 @@ tags: google protobuf
 description: C++方式记录google protobuf使用指南
 ---
 
-## 首先是安装必备的包 本人使用的是fedora 22
+## 首先是安装必备的包
+本人使用的是fedora 22 64位
+
 ```
 sudo dnf install gcc-g++
 ```
