@@ -16,12 +16,12 @@ sudo dnf install gcc-g++
 首先阅读[protobuf介绍][0]官网的*What are protocol buffers?*部分 清晰明了的介绍 就是类似于XML方式的格式化数据序列化 然后去[protobuf-download][1]下载最新的protobuf 安装过程以2.6.1为例:
 
 ```
-	$ tar -xzvf protobuf-2.6.1.tar.gz
-	$ cd protobuf-2.6.1
-	$ ./configure
-  $ make
-  $ make check
-	$ sudo make install
+$ tar -xzvf protobuf-2.6.1.tar.gz
+$ cd protobuf-2.6.1
+$ ./configure
+$ make
+$ make check
+$ sudo make install
 ```
 
 
