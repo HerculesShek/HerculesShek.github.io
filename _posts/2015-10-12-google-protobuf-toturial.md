@@ -26,11 +26,35 @@ $ sudo make install
 
 
 ## C++ demo实践
-这里主要是跟着[C++ toturial][2]来进行 首先编写`.proto`文件
-```   
+这里主要是跟着[C++ toturial][2]来进行 首先编写`.proto`文件 `emacs addressbook.proto`
 
+```   
+package tutorial;
+
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    required string number = 1;
+    optional PhoneType type = 2 [default = HOME];
+  }
+
+  repeated PhoneNumber phone = 4;
+}
+
+message AddressBook {
+  repeated Person person = 1;
+}
 ```
-   
+
 
 
 
