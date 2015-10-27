@@ -7,7 +7,7 @@ description: C++方式记录google protobuf使用指南
 ---
 
 ## 首先是安装必备的包
-本人使用的是fedora 22 64位
+环境：fedora 22 64位
 
 ```
 sudo dnf install gcc-g++
@@ -15,7 +15,7 @@ sudo dnf install gcc-g++
 
 ## 安装protoc
 
-首先阅读[protobuf介绍][0]官网的*What are protocol buffers?*部分 清晰明了的介绍 就是类似于XML方式的格式化数据序列化 然后去[protobuf-download][1]下载最新的protobuf 安装过程以2.6.1为例:
+首先阅读[protobuf介绍][0]官网的**What are protocol buffers?**部分 清晰明了的介绍 就是类似于XML方式的格式化数据序列化 然后去[protobuf-download][1]下载最新的protobuf 安装过程以2.6.1为例:
 
 ```
 $ tar -xzvf protobuf-2.6.1.tar.gz
@@ -25,7 +25,6 @@ $ make
 $ make check
 $ sudo make install
 ```
-
 
 ## C++ demo实践
 这里主要是跟着[C++ toturial][2]来进行 首先编写`.proto`文件 `emacs addressbook.proto`
@@ -171,6 +170,7 @@ $ ./message_w book
 ./message_w: error while loading shared libraries: libprotobuf.so.9: cannot open shared object file: No such file or directory
 ```
 
+这里一定注意的是 使用 g++ 并且要使用`-l protobuf`选项！
 此时执行一般会报上面的错误：
 
 ```
