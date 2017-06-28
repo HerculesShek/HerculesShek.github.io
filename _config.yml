@@ -3,7 +3,7 @@ baseurl: http://willxz.com
 markdown: rdiscount
 pygments: true
 
-# title: Will Shek
+title: Will Shek
 
 feed: /atom.xml
 permalink: /:title
