@@ -1,9 +1,10 @@
 baseurl: http://willxz.com
 
-markdown: rdiscount
-pygments: true
+# markdown: rdiscount
+# pygments: true
 
 title: Will Shek
-
+url: http://willxz.com
 feed: /atom.xml
-permalink: /:title
+permalink: /:categories/:year/:month/:day/:title
+
