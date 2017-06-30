@@ -37,21 +37,27 @@ layout: default
         <h2>Blog</h2>
         <ul class="artical-list">
         {% for post in site.categories.blog%}
+           <div class="alist-title">
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
         {% endfor %}
         </ul>
 
         <h2>Opinion</h2>
         <ul class="artical-list">
         {% for post in site.categories.opinion%}
+           <div class="alist-title">
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
         {% endfor %}
         </ul>
 
         <h2>Project</h2>
         <ul class="artical-list">
         {% for post in site.categories.project%}
+           <div class="alist-title">
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
         {% endfor %}
         </ul>
     </div>
