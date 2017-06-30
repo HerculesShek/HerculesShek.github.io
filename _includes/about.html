@@ -1,0 +1,36 @@
+<div class="about-wrapper">    
+    <div class="sidenav">
+	  <iframe width="350" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=350&height=75&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=1&uid=3960733160&verifier=24f3b615&dpc=1"></iframe>
+	</div>
+
+    <div class="sidenav">
+        <h2>所有文章</h2>
+        <ul class="artical-list">
+        {% for post in site.categories.blog %}
+            <div class="alist-title">
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
+        {% endfor %}
+        </ul>
+        <!-- 
+        <h2>Opinion</h2>
+        <ul class="artical-list">
+        {% for post in site.categories.opinion %}
+            <div class="alist-title">
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
+        {% endfor %}
+        </ul>
+
+        <h2>Project</h2>
+        <ul class="artical-list">
+        {% for post in site.categories.project %}
+            <div class="alist-title">
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            </div>
+        {% endfor %}
+        </ul>
+        -->
+    </div>
+</div>
+
