@@ -231,7 +231,7 @@ jQuery(document).ready(function(){
 });
 ```
 
-## JQuery问题：
+## 一些问题：
 ### margin和padding
 关于如何布局的问题 首先是 margin和padding等问题，margin是用来设置**“外边距”**的<br/>
 margin始终是透明的。
@@ -268,9 +268,12 @@ padding是留白或者补白，是边框和正文之间的距离
 **<span style="color: red; font-style: italic;">TODO 后续在这里补充例子</span>**
 
 ### 浮动
-浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
-
-**浮动的第一个问题**
+关于浮动 单独写了一篇[CSS浮动][8]
+### CSS的position
+参考文章:
++ [CSS之Position详解][9] 
++ [CSS中position属性( absolute \| relative \| static \| fixed )详解][10]
++ [CSS - position属性详解][11]
 
 
 ## HTML
@@ -283,6 +286,10 @@ padding是留白或者补白，是边框和正文之间的距离
 [5]: http://www.hicss.net/do-not-tell-me-you-understand-margin/
 [6]: http://www.hicss.net/use-margin-or-padding/
 [7]: http://www.hicss.net/i-know-you-do-not-know-the-negative-margin/
+[8]: /blog/2017/07/07/css-float "CSS浮动"
+[9]: http://www.cnblogs.com/Zigzag/archive/2009/02/19/position.html
+[10]: http://blog.csdn.net/chen_zw/article/details/8741365
+[11]: http://www.jianshu.com/p/a2fbc435bbdd
 
 
 
