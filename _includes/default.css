@@ -218,7 +218,9 @@ a.title {
     margin: 4px 2px 0px 0px;
 }
 
-
+.todo-span{
+    color: red; font-style: italic; background-color: yellow;
+}
 
 
 
