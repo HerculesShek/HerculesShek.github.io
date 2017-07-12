@@ -1,6 +1,6 @@
 baseurl: http://willxz.com
 
-# markdown: rdiscount
+markdown: kramdown
 # pygments: true
 
 title: Will Shek
