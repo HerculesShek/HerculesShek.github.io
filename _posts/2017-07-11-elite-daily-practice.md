@@ -7,7 +7,7 @@ description: 精英练习
 ---
 
 ## 洞察时代
-**<span style="color: red; font-style: italic;">TODO 后续在这里补充例子</span>**
+**<span class="todo-span">TODO 后续在这里补充例子</span>**
 ## What Should I Do?
 ### 成功是成功之母 <span style="visibility: hidden">001</span>
 《Smaricuts: How Hackers, Innovators, and Icons Accelerate Sucess》（《捷径：黑客，创新者和偶像如何加速成功》）<br/>
