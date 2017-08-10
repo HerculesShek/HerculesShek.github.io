@@ -30,3 +30,6 @@ permalink: /about
 ### Other
 我的微博 GitHub 豆瓣读书等
 
+我的微信公众号，搜索公众号名称“不止笔墨”，或者微信号“willbimo”
+
+
