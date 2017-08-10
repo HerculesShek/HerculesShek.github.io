@@ -5,15 +5,16 @@ layout: default
 <div class="allposts">
 	
 <h2>Articles</h2>
+
 <ul class="artical-list">
 　　{% for post in site.posts %}
-        <li>
-            <span class="title_date">{{ post.date | date_to_string }} </span>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="title">{{ post.title }}</a>
-        </li>
+		<li>
+			<span class="title_date">{{ post.date | date_to_string }} </span>
+			<a href="{{ site.baseurl }}{{ post.url }}" class="title">{{ post.title }}</a>
+		</li>
 　　{% endfor %}
 </ul>
 
-	
+
 </div>
 

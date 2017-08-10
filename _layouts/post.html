@@ -1,10 +1,10 @@
 ---
 layout: default
+comments: true
 ---
 
 <link rel="stylesheet" href="/js/highlighter/sansofobs.css" />
 <style type="text/css">
-    /* body { background:#e8e8e8; } */ 
     body { background:#6C7989; }
     @media screen and (max-width: 750px){
         body { background:#fff; }
@@ -17,13 +17,16 @@ layout: default
 <div id="content">
     <div class="entry">
         <h1 class="entry-title">
-		  <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+		  <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+        </h1>
         <p class="entry-date">{{ page.date|date:"%b %-d, %Y" }}</p>
+
         {{ content }}
-	{% include disqus.html %}
+		{% include disqus.html %}
     </div>
+
 {% include about.html %}
 </div>
 <script src="/js/highlighter/prettify.js"></script> 
-<script src="/js/post.js" type="text/javascript"></script>
+<!-- <script src="/js/post.js" type="text/javascript"></script> -->
 

@@ -56,7 +56,7 @@ pre code{background-color:transparent;border:none;padding:0;word-wrap:normal;}
 pre ol{margin-left:25px;list-style-type:decimal;}
 
 /************layout style*****************/
-#content {width:1060px;margin:90px auto 60px;min-height:400px;height:auto !important;height:400px; }
+#content {width:1060px;margin:20px auto 20px auto;min-height:400px;height:auto !important;height:400px; }
 
 
 /****************entry style**************/
@@ -66,6 +66,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .sidenav li { margin-bottom:12px; }
 .sidenav a { color:#555; font-size:14px; display:block;}
 /*.entry{margin-bottom:80px;width:680px; float:left; background:#fff; padding:30px; box-shadow:0 2px 6px #ccc; }*/
+/* 文章面板样式 */
 .entry {
     margin-bottom: 80px;
     width: 680px;
@@ -255,6 +256,324 @@ table.mbtablestyle th {
     display: table-row-group;
     vertical-align: middle;
 }
+
+
+/*******************************页面header的css样式***************************/
+
+.header {
+    /*  background-color: #f2f2f2;*/
+    background: #f2f2f2;
+}
+@media (min-width: 1600px) {
+    .header-inner {
+        width: 900px;
+    }
+}
+.header-inner:before,
+.header-inner:after {
+    content: " ";
+    display: table;
+}
+.header-inner:after {
+    clear: both;
+}
+.header-inner {
+    padding: 25px 0 20px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.site-meta {
+    margin: 0;
+    text-align: left;
+}
+@media (max-width: 767px) {
+    .site-meta {
+        text-align: center;
+    }
+}
+.site-meta {
+    float: left;
+    margin-left: -20px;
+    line-height: normal;
+}
+@media (max-width: 767px) {
+    .site-meta {
+        margin-left: 10px;
+    }
+}
+.site-meta .brand {
+    padding: 2px 1px;
+    background: none;
+}
+.brand {
+    position: relative;
+    display: inline-block;
+    color: #222;
+    border-bottom: none;
+}
+.logo-line-before,
+.logo-line-after {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 75%; /*这里的宽度就是标题上下两个横条的长度*/
+}
+
+@media (max-width: 767px) {
+  .logo-line-before,
+  .logo-line-after {
+    display: none;
+  }
+}
+
+.logo-line-before i,
+.logo-line-after i {
+    position: relative;
+    display: block;
+    height: 2px;
+    background: #222;
+}
+
+@media (max-width: 767px) {
+  .logo-line-before i,
+  .logo-line-after i {
+    height: 3px;
+  }
+}
+
+.site-title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.logo-line-before i {
+    left: -100%; /*这里先让上面的横线偏移出去 做js动画只用*/
+}
+.logo-line-after i {
+    right: -100%; /*这里先让上面的横线偏移出去 做js动画只用*/
+}
+.site-meta .site-title {
+    font-size: 22px;
+    font-weight: bolder;
+}
+.site-subtitle {
+    display: none;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #a52929;
+}
+
+/*首页右侧导航条*/
+
+@media (max-width: 767px) {
+    .site-nav {
+        display: none;
+        margin: 0 -10px;
+        padding: 0 10px;
+        clear: both;
+        border-top: 1px solid #ddd;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .site-nav {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) {
+    .site-nav {
+        display: block !important;
+    }
+}
+
+.menu {
+  margin-top: 20px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.menu .menu-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu .menu-item {
+    margin-top: 10px;
+  }
+}
+
+.menu .menu-item a {
+  display: block;
+  font-size: 13px;
+  text-transform: capitalize;
+  line-height: 2;
+  border-bottom: 1px solid transparent;
+  transition-property: border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.menu .menu-item a:hover {
+  border-bottom-color: #222;
+}
+
+
+.menu .menu-item .fa {
+  margin-right: 5px;
+}
+
+.use-motion .menu-item {
+  opacity: 0;
+}
+
+.menu {
+  float: right;
+  margin: 8px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+}
+
+
+.menu br {
+  display: none;
+}
+
+.menu .menu-item {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .menu .menu-item {
+    display: block;
+  }
+}
+
+.menu .menu-item a {
+  padding: 0 10px;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  transition-property: background;
+  color: #555;
+}
+@media (max-width: 767px) {
+  .menu .menu-item a {
+    text-align: left;
+  }
+}
+.menu .menu-item a:hover {
+  background: #e1e1e1;
+  text-decoration: none;
+}
+.menu a::before {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu a::before {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    float: none;
+  }
+}
+
+
+/*关于页面的 联系我*/
+#contact-me {
+    padding: 0 15px;
+    color: #666;
+    border-left: 4px solid #ddd;
+    font-style: normal;
+}
+
+
+/*页脚*/
+.footer {
+    /*position: absolute;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+}
+.footer {
+    font-size: 14px;
+    color: #999;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 10px 0;
+    background: #f5f5f5;
+    color: #666;
+    float: right;
+    display: block;
+    /*box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;*/
+    /*border-radius: 8px;*/
+}
+
+.footer-inner {
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 700px;
+}
+
+@media (min-width: 1600px) {
+    .container .footer-inner {
+        width: 900px;
+    }
+}
+.footer-inner {
+    text-align: center;
+}
+
+.footer-inner {
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .footer-inner {
+        width: auto;
+        text-align: center;
+    }
+}
+
+.with-date::after {
+    content: "|";
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-web-link{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-web-link a{
+    color: #222;
+}
+.footer-web-link a:hover {
+    text-decoration: none;
+}
+
+.powered-by {
+    margin-top: 4px;
+}
+
+.footer-power-link {
+    margin-left: 10px;
+}
+
+
 
 
 
