@@ -505,6 +505,7 @@ table.mbtablestyle th {
     width: 100%;
     min-height: 50px;
 }
+
 .footer {
     font-size: 14px;
     color: #999;
@@ -571,6 +572,27 @@ table.mbtablestyle th {
 
 .footer-power-link {
     margin-left: 10px;
+}
+
+/* 404页面的footer */
+.footer_404 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+
+    font-size: 14px;
+    color: #999;
+
+    margin-top: 80px;
+    padding: 10px 0;
+    background: #f5f5f5;
+    color: #666;
+    float: right;
+    display: block;
+    /*box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;*/
+    /*border-radius: 8px;*/
 }
 
 
