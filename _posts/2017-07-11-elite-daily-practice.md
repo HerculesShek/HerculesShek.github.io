@@ -7,7 +7,7 @@ description: 精英练习
 ---
 
 ## 洞察时代
-**<span class="todo-span">TODO 后续在这里补充例子</span>**
+**<span class="todo-span">关注精英练习</span>**
 ## What Should I Do?
 ### 成功是成功之母 <span style="visibility: hidden">001</span>
 《Smaricuts: How Hackers, Innovators, and Icons Accelerate Sucess》（《捷径：黑客，创新者和偶像如何加速成功》）<br/>
@@ -145,7 +145,9 @@ description: 精英练习
 腹侧纹状体
 
 
-
+<blockquote id="with-left-border">
+    <p>注：本文所列的学习总结来自于<a href="http://www.geekonomics10000.com/">万维钢老师</a></p>
+</blockquote>
 
 
 
@@ -153,6 +155,7 @@ description: 精英练习
 
 
 [0]: http://www.jianshu.com/p/07eb19957991 "CSS浮动float详解"
+[1]:  "学而时嘻之"
 
 
 
