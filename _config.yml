@@ -1,10 +1,13 @@
-baseurl: http://willxz.com
+baseurl: http://herculesshek.github.io
+# baseurl: http://willxz.com
 
 markdown: kramdown
 # pygments: true
 
 title: Will Shek
-url: http://willxz.com
+url: http:herculesshek.github.io
+# url: http://willxz.com
+# 
 feed: /atom.xml
 permalink: /:categories/:year/:month/:day/:title
 
